@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Teachers</h2>
+      <form id="addTeacherForm">
+        <input id="t_name" placeholder="Name" required>
+        <input id="t_dept" placeholder="Department">
+        <input id="t_subject" placeholder="Subject">
+        <input id="t_email" placeholder="Email" required>
+        <input id="t_password" placeholder="password" required>
+        <button type="submit">Add Teacher</button>
+      </form>
+      <div id="teachersList"></div>
+    </section>
+
+    <section>
+      <h2>Pending Students</h2>
+      <div id="pendingStudents"></div>
+    </section>
+
+    <section>
+      <h2>All Appointments (Log)</h2>
+      <div id="allAppointments"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js" type="module"></script>
+  
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard - Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main>
+    <section id="studentSection" style="display:none">
+      <h2>Search Teachers</h2>
+      <input id="searchTeacher" placeholder="Search by name, dept or subject">
+      <div id="teacherList"></div>
+
+      <h2>Your Appointments</h2>
+      <div id="myAppointments"></div>
+    </section>
+
+    <section id="teacherSection" style="display:none">
+      <h2>Incoming Appointments</h2>
+      <div id="incomingAppointments"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
+
